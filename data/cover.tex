@@ -1,0 +1,298 @@
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
+
+% 中国海洋大学研究生学位论文封面
+% 参考：中国海洋大学研究生学位论文书写格式20130307.doc
+
+% 为避免出现错误，下面保留［清华大学学位论文模板原有定义无需修改］，
+% 请直接跳到后面［中国海洋大学学位论文模板部分请根据自己情况修改］。
+
+%%%%%%%%%%%%%%%%%%%%%%［清华大学学位论文模板原有定义无需修改］%%%%%%%%%%%%%%%%%%%%%%%
+\secretlevel{绝密} \secretyear{2100}
+
+\ctitle{清华大学学位论文 \LaTeX\ 模板\\使用示例文档}
+% 根据自己的情况选，不用这样复杂
+\makeatletter
+\ifthu@bachelor\relax\else
+  \ifthu@doctor
+    \cdegree{工学博士}
+  \else
+    \ifthu@master
+      \cdegree{工学硕士}
+    \fi
+  \fi
+\fi
+\makeatother
+
+
+\cdepartment[计算机]{计算机科学与技术系}
+\cmajor{计算机科学与技术}
+\cauthor{薛瑞尼} 
+\csupervisor{郑纬民教授}
+% 如果没有副指导老师或者联合指导老师，把下面两行相应的删除即可。
+\cassosupervisor{陈文光教授}
+\ccosupervisor{某某某教授}
+% 日期自动生成，如果你要自己写就改这个cdate
+%\cdate{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+
+% 博士后部分
+% \cfirstdiscipline{计算机科学与技术}
+% \cseconddiscipline{系统结构}
+% \postdoctordate{2009年7月——2011年7月}
+
+\etitle{An Introduction to \LaTeX{} Thesis Template of Tsinghua University} 
+% 这块比较复杂，需要分情况讨论：
+% 1. 学术型硕士
+%    \edegree：必须为Master of Arts或Master of Science（注意大小写）
+%              “哲学、文学、历史学、法学、教育学、艺术学门类，公共管理学科
+%               填写Master of Arts，其它填写Master of Science”
+%    \emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+% 2. 专业型硕士
+%    \edegree：“填写专业学位英文名称全称”
+%    \emajor：“工程硕士填写工程领域，其它专业学位不填写此项”
+% 3. 学术型博士
+%    \edegree：Doctor of Philosophy（注意大小写）
+%    \emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+% 4. 专业型博士
+%    \edegree：“填写专业学位英文名称全称”
+%    \emajor：不填写此项
+\edegree{Doctor of Engineering} 
+\emajor{Computer Science and Technology} 
+\eauthor{Xue Ruini} 
+\esupervisor{Professor Zheng Weimin} 
+\eassosupervisor{Chen Wenguang} 
+% 这个日期也会自动生成，你要改么？
+% \edate{December, 2005}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+  论文的摘要是对论文研究内容和成果的高度概括。摘要应对论文所研究的问题及其研究目
+  的进行描述，对研究方法和过程进行简单介绍，对研究成果和所得结论进行概括。摘要应
+  具有独立性和自明性，其内容应包含与论文全文同等量的主要信息。使读者即使不阅读全
+  文，通过摘要就能了解论文的总体内容和主要成果。
+
+  论文摘要的书写应力求精确、简明。切忌写成对论文书写内容进行提要的形式，尤其要避
+  免“第 1 章……；第 2 章……；……”这种或类似的陈述方式。
+
+  本文介绍清华大学论文模板 \thuthesis{} 的使用方法。本模板符合学校的本科、硕士、
+  博士论文格式要求。
+
+  本文的创新点主要有：
+  \begin{itemize}
+    \item 用例子来解释模板的使用方法；
+    \item 用废话来填充无关紧要的部分；
+    \item 一边学习摸索一边编写新代码。
+  \end{itemize}
+
+  关键词是为了文献标引工作、用以表示全文主要内容信息的单词或术语。关键词不超过 5
+  个，每个关键词中间用分号分隔。（模板作者注：关键词分隔符不用考虑，模板会自动处
+  理。英文关键词同理。）
+\end{cabstract}
+
+\ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
+
+\begin{eabstract} 
+   An abstract of a dissertation is a summary and extraction of research work
+   and contributions. Included in an abstract should be description of research
+   topic and research objective, brief introduction to methodology and research
+   process, and summarization of conclusion and contributions of the
+   research. An abstract should be characterized by independence and clarity and
+   carry identical information with the dissertation. It should be such that the
+   general idea and major contributions of the dissertation are conveyed without
+   reading the dissertation. 
+
+   An abstract should be concise and to the point. It is a misunderstanding to
+   make an abstract an outline of the dissertation and words ``the first
+   chapter'', ``the second chapter'' and the like should be avoided in the
+   abstract.
+
+   Key words are terms used in a dissertation for indexing, reflecting core
+   information of the dissertation. An abstract may contain a maximum of 5 key
+   words, with semi-colons used in between to separate one another.
+\end{eabstract}
+
+\ekeywords{\TeX, \LaTeX, CJK, template, thesis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%［中国海洋大学学位论文模板部分请根据自己情况修改］%%%%%%%%%%%%%%%%%%%
+% 中国海洋大学研究生学位论文封面
+% 必须填写的内容包括（其他最好不要修改）：
+%   分类号、密级、UDC
+%   论文中文题目、作者中文姓名
+%   论文答辩时间
+%   封面感谢语
+%   论文英文题目
+%   中文摘要、中文关键词
+%   英文摘要、英文关键词
+%
+%%%%%［自定义］%%%%%
+\newcommand{\fenleihao}{}%分类号
+\newcommand{\miji}{}%密级 
+                    % 绝密$\bigstar$20年 
+                    % 机密$\bigstar$10年
+                    % 秘密$\bigstar$5年
+\newcommand{\UDC}{}%UDC
+\newcommand{\oucctitle}{基于环结构特征的视网膜血管图像配准算法研究}%论文中文题目
+\ctitle{基于环结构特征的视网膜血管图像配准算法研究}%必须修改因为页眉中用到
+\cauthor{***}%可以选择修改因为仅在 pdf 文档信息中用到
+\cdegree{工学硕士}%可以选择修改因为仅在 pdf 文档信息中用到
+\ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}%可以选择修改因为仅在 pdf 文档信息中用到
+\newcommand{\ouccauthor}{邱欣欣}%作者中文姓名
+%\newcommand{\ouccauthor}{***}%外审时用到
+%\newcommand{\ouccsupervisor}{姬光荣教授}%作者导师中文姓名
+%\newcommand{\ouccdegree}{博\hspace{1em}士}%作者申请学位级别
+%\newcommand{\ouccmajor}{海洋信息探测与处理}%作者专业名称
+%\newcommand{\ouccdateday}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月\CJKnumber{\the\day}日}
+%\newcommand{\ouccdate}{\CJKdigits{\the\year}年\CJKnumber{\the\month}月}
+\newcommand{\oucdatedefense}{           }%论文答辩时间
+%\newcommand{\oucdatedegree}{2009年6月}%学位授予时间
+\newcommand{\oucgratitude}{谨以此论文献给我的导师和亲人！}%封面感谢语
+\newcommand{\oucetitle}{Retinal Vessel Images Registration Algorithm via Cycle Structure}%论文英文题目
+%\newcommand{\ouceauthor}{Haiyong Zheng}%作者英文姓名
+\newcommand{\oucthesis}{\textsc{OUCThesis}}
+%%%%%默认自定义命令%%%%%
+% 空下划线定义
+\newcommand{\oucblankunderline}[1]{\rule[-2pt]{#1}{.7pt}}
+\newcommand{\oucunderline}[2]{\underline{\hskip #1 #2 \hskip#1}}
+
+% 论文封面第一页
+%%不需要改动%%
+\vspace*{5cm}
+{\xiaoer\heiti\oucgratitude
+
+\begin{flushright}
+---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---\hspace*{-2mm}---~\ouccauthor
+\end{flushright}
+}
+
+%\begin{comment}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 论文封面第二页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaoer\heiti\oucctitle}
+\end{center}
+\vspace{10.7cm}
+{\normalsize\songti
+\begin{flushright}
+{\renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{r@{}l}
+    学位论文答辩日期：~ & \oucunderline{2.5cm}{\oucdatedefense} \\
+    指导教师签字：~ & \oucblankunderline{5cm} \\
+    答辩委员会成员签字：~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+    ~ & \oucblankunderline{5cm} \\
+  \end{tabular}
+}
+\end{flushright}
+}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 论文封面第三页
+%%不需要改动%%
+\vspace*{1cm}
+\begin{center}
+  {\xiaosan\heiti 独\hspace{1em}创\hspace{1em}声\hspace{1em}明}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本人声明所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。据我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含未获得~\oucblankunderline{7cm}（注：如没有其他需要特别声明的，本栏可空）或其他教育机构的学位或证书使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示谢意。
+}
+\vskip1.5cm
+\begin{flushright}{\normalsize\songti
+  学位论文作者签名：\hskip2cm 签字日期：\hskip1cm 年 \hskip0.7cm 月\hskip0.7cm 日}
+\end{flushright}
+\vskip.5cm
+{\setlength{\unitlength}{0.1\textwidth}
+  \begin{picture}(10, 0.1)
+    \multiput(0,0)(0.2, 0){50}{\rule{0.15\unitlength}{.5pt}}
+  \end{picture}}
+\vskip1cm
+\begin{center}
+  {\xiaosan\heiti 学位论文版权使用授权书}
+\end{center}
+\par{\normalsize\songti\parindent2em
+本学位论文作者完全了解学校有关保留、使用学位论文的规定，并同意以下事项：
+\begin{enumerate}
+\item 学校有权保留并向国家有关部门或机构送交论文的复印件和磁盘，允许论文被查阅和借阅。
+\item 学校可以将学位论文的全部或部分内容编入有关数据库进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。同时授权清华大学“中国学术期刊(光盘版)电子杂志社”用于出版和编入CNKI《中国知识资源总库》，授权中国科学技术信息研究所将本学位论文收录到《中国学位论文全文数据库》。
+\end{enumerate}
+（保密的学位论文在解密后适用本授权书）
+}
+\vskip1.5cm
+{\parindent0pt\normalsize\songti
+学位论文作者签名：\hskip4.2cm\relax%
+导师签字：\relax\hspace*{1.2cm}\\
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hfill%
+签字日期：\hskip1cm 年\hskip0.7cm 月\hskip0.7cm 日\relax\hspace*{1.2cm}}
+
+%\end{comment}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+\pagestyle{plain}
+\clearpage\pagenumbering{roman}
+
+% 中文摘要
+%%［需要填写：中文摘要、中文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucctitle\\\vskip7pt 摘\hspace{1em}要}
+\end{center}
+{\normalsize\songti
+
+  \indent
+视网膜图像配准是视网膜图像分析的重要分支之一，它对于眼科医师进行眼科疾病的预防、分析和检测具有重要的作用，引起了研究人员的广泛关注。基于特征的配准方法是图像配准的两种主要方法之一，它通常采用鲁棒的配准特征如视网膜的血管及视神经盘等，因而对视网膜图像配准来说更为有效。在本文中，我们提出了一种基于多尺度与多环特征，结合从局部到全局配准策略的复合配准方法（LGMM），成功应用于VARIA数据库的视网膜血管图像配准。主要研究工作如下：
+\begin{enumerate}
+\item 基于多小波核及多尺度分层分割方法，得到具有不同血管细节的多尺度分割血管图，以降低选用较差分割结果图造成的特征提取失败的概率。多尺度分割结合进一步的预处理步骤，完成了骨架化二值图像的提取。
+\item 从骨架化二值图像提取一种新的配准特征-环结构用于视网膜血管图像配准，环结构是由动脉和静脉血管的分叉点、交叉点及相连接的血管组成的结构。与其他配准特征相比，环结构特征更具有唯一性和鲁棒性，其可由我们提出的基于空间信息的深度优先搜索算法（SDFS）提取。将具有不同顶点数的环结构进行组合可得到多环结构。
+\item 提出了从局部到全局的配准策略。首先，对环结构特征进行扩展，得到环-血管特征，作为局部初次配准的特征点进行相似性变换；然后，由参考图像与变换后的待配准图像，找到图像全局范围内未配准的分叉点，与环-血管组成环-血管-分叉点特征，进行全局的二次配准。实验证明通过以上策略可有效提高配准的准确率。
+\item 给出了骨架化对齐误差度量（SAEM）方法用于得出最优的分割尺度和环结构特征，同时自动地得到最优的配准结果。\end{enumerate}
+本文提出了一种新的视网膜血管图像配准方法（LGMM），并在VARIA视网膜血管图像数据库上与其它基于特征的方法进行了对比实验。结果表明我们提出的方法在正确性和鲁棒性方面较其他基于特征的方法表现更加优异，对于视网膜图像配准是可行和有效的。
+}
+\vskip12bp
+{\xiaosi\heiti\noindent
+关键词：\hskip1em 视网膜血管图像； 图像配准；环结构}
+
+\newpage 
+%\mbox{} 
+%\newpage
+
+% 英文摘要
+%%［需要填写：英文摘要、英文关键词］%%
+\begin{center}
+  {\sanhao[1.5]\heiti\oucetitle\\\vskip7pt Abstract}
+\end{center}
+{\normalsize\songti
+
+Retinal image registration is one of the important branches for retinal image analysis, and is essential and crucial for ophthalmologists to prevent, analyze and diagnose various ophthalmic diseases, hence attracts more and more attention of researchers. Feature-based methods, as one of main ways for image registration, are generally more effective as they usually use robust features such as retinal vessel and optic disk. In this thesis, we propose a comprehensive method using multiscale and multicycle features for retinal vessel image registration under global to local strategy (LGMM). The main research contributions are as follows:
+\begin{enumerate}
+\item The multiscale vessel maps generated by multiwavelet kernels and multiscale hierarchical decomposition contain segmentation results at varying image resolutions in different levels of vessel details, which can greatly decrease the probability of feature extraction failure because of bad segmentation result. Then we get the binary images for registration combined with some pre-processing procedures.
+\item A new registration feature-Cycle structure is proposed from binary images. The Cycle structure, consists of vessel bifurcation points, crossover points of arteries and veins, and the connected vessels. Compared to other features, the Cycle structure feature is more unique and robust, which can be found by our Space-based Depth-First Search (SDFS) algorithm. Then the multicycle features are extracted composed of various combinations of cycle structures with different numbers of vertices.
+\item The strategy form local to global for registration is presented here. Firstly, the Cycle structure feature is expanded to Cycle-Vessel feature and global initial registration is implemented by the matched Cycle-Vessel feature points using similarity transformation. Secondly, the unaligned bifurcation points are searched by the reference image and transformed floating image to form the Cycle-Vessel-Bifurcation feature and local final registration is completed by the Cycle-Vessel-Bifurcation feature points. Experimental results show that the strategy can effectively improve the registration accuracy.
+\item The Skeleton Alignment Error Measure (SAEM) is calculated for optimal scale and cycle structure feature selection, yielding the best registration result intelligently. 
+\end{enumerate}
+This thesis proposes a new retinal image registration method (LGMM) and make comparative experiments with some feature-based methods. Experimental results show that our method outperforms the other methods using different features in terms of accuracy and robustness, is feasible and effective in retinal image registration.
+}
+\vskip12bp
+{\xiaosi\heiti\noindent 
+\textbf{Keywords:\enskip retinal vessel images, image registration, Cycle structure}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage 
+%\mbox{} 
+%\newpage
